@@ -41,6 +41,7 @@ java {
 kotlin {
     compilerOptions {
         jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_25)
+        freeCompilerArgs.add("-jvm-default=no-compatibility")
     }
 }
 
