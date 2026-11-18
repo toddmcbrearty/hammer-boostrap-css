@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <!-- Caret line -->
+  <line x1="18" y1="2" x2="18" y2="18" stroke="#6C707E" stroke-width="2" stroke-linecap="round"/>
+  <!-- Name pill -->
+  <rect x="1" y="2" width="14" height="16" rx="3.5" fill="#EEF0F3" stroke="#5A5D6B" stroke-width="1.6"/>
+  <!-- '--' bold dashes inside pill -->
+  <line x1="3.5" y1="10" x2="7" y2="10" stroke="#25272C" stroke-width="2.6" stroke-linecap="round"/>
+  <line x1="8.5" y1="10" x2="12" y2="10" stroke="#25272C" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- Arrow entering caret -->
+  <path d="M14.5 10 L17.5 10 M16 8.5 L17.5 10 L16 11.5" fill="none" stroke="#5A5D6B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

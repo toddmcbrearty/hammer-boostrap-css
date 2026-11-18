@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <!-- Caret line -->
+  <line x1="18" y1="2" x2="18" y2="18" stroke="#6C707E" stroke-width="2" stroke-linecap="round"/>
+  <!-- Var pill with arrow -->
+  <rect x="1" y="2" width="14" height="16" rx="3.5" fill="#EBF4FE" stroke="#3574F0" stroke-width="1.6"/>
+  <!-- 'v()' inside pill -->
+  <path d="M3.5 7 L5.8 13 L8.1 7" fill="none" stroke="#3574F0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M9.8 6.5 C9.2 8.2 9.2 11.8 9.8 13.5" fill="none" stroke="#3574F0" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M12.2 6.5 C12.8 8.2 12.8 11.8 12.2 13.5" fill="none" stroke="#3574F0" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Arrow entering caret -->
+  <path d="M14.5 10 L17.5 10 M16 8.5 L17.5 10 L16 11.5" fill="none" stroke="#3574F0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

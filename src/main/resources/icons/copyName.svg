@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <!-- Back sheet -->
+  <rect x="5.5" y="1" width="13" height="15" rx="2.5" fill="none" stroke="#6C707E" stroke-width="1.6"/>
+  <!-- Front sheet -->
+  <rect x="1.5" y="4" width="13.5" height="15" rx="2.5" fill="#EEF0F3" stroke="#5A5D6B" stroke-width="1.6"/>
+  <!-- '--' bold dashes inside -->
+  <line x1="4" y1="12" x2="7.5" y2="12" stroke="#25272C" stroke-width="2.6" stroke-linecap="round"/>
+  <line x1="9" y1="12" x2="12.5" y2="12" stroke="#25272C" stroke-width="2.6" stroke-linecap="round"/>
+</svg>

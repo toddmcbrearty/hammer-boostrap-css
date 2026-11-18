@@ -1,0 +1,62 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.github.todd.hammerbootstrapcss</id>
+    <name>Hammer Bootstrap CSS</name>
+    <vendor>Todd</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="com.github.todd.hammerbootstrap.service.BootstrapVariableService"/>
+
+        <toolWindow id="Bootstrap CSS"
+                    secondary="true"
+                    icon="/icons/hammerBootstrap.svg"
+                    anchor="right"
+                    factoryClass="com.github.todd.hammerbootstrap.ui.BootstrapVariablesToolWindowFactory"/>
+    </extensions>
+
+    <actions>
+        <group id="com.github.todd.hammerbootstrap.Menu"
+               class="com.github.todd.hammerbootstrap.actions.HammerBootstrapActionGroup"
+               text="Hammer Bootstrap CSS"
+               popup="true"
+               icon="/icons/hammerBootstrap.svg">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+
+            <action id="com.github.todd.hammerbootstrap.SearchVariablesAction"
+                    class="com.github.todd.hammerbootstrap.actions.SearchBootstrapVariablesAction"
+                    text="Search Bootstrap CSS Variables..."
+                    description="Search Bootstrap CSS variables in tool window"
+                    icon="/icons/hammerBootstrap.svg">
+                <keyboard-shortcut keymap="$default" first-keystroke="control alt B"/>
+            </action>
+
+            <action id="com.github.todd.hammerbootstrap.QuickSearchAction"
+                    class="com.github.todd.hammerbootstrap.actions.QuickSearchBootstrapVariablesAction"
+                    text="Quick Search Bootstrap Variables Dialog..."
+                    description="Open quick search modal dialog for Bootstrap CSS variables"
+                    icon="/icons/hammerBootstrap.svg">
+                <keyboard-shortcut keymap="$default" first-keystroke="shift alt B"/>
+            </action>
+        </group>
+
+        <!-- Direct action in GoTo Menu -->
+        <action id="com.github.todd.hammerbootstrap.GoToVariableAction"
+                class="com.github.todd.hammerbootstrap.actions.SearchBootstrapVariablesAction"
+                text="Bootstrap CSS Variable..."
+                description="Navigate and search Bootstrap CSS variables"
+                icon="/icons/hammerBootstrap.svg">
+            <add-to-group group-id="GoToMenu" anchor="after" relative-to-action="GotoSymbol"/>
+        </action>
+
+        <!-- Direct action in Editor Context Menu -->
+        <action id="com.github.todd.hammerbootstrap.EditorSearchAction"
+                class="com.github.todd.hammerbootstrap.actions.QuickSearchBootstrapVariablesAction"
+                text="Insert Bootstrap CSS Variable..."
+                description="Search and insert Bootstrap CSS variable at caret"
+                icon="/icons/hammerBootstrap.svg">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
